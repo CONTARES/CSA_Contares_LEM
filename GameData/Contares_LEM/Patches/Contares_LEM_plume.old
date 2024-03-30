@@ -38,3 +38,23 @@
         %powerEffectName = Kerolox-Upper
     }
 }
+@PART[MEU_LU_ENGINE]:FOR[RealPlume]:NEEDS[SmokeScreen] //Testeintrag
+{
+    PLUME
+    {
+        name = Hydynelox-A7
+        transformName = thrustTransform
+        localRotation = 0,0,0
+        plumePosition = 0,0,-0.2
+        flarePosition = 0,0,-0.2
+        plumeScale = 0.45
+        flareScale = 0.45
+        energy = 1.0
+        speed = 1
+    }
+    @MODULE[ModuleEngines*]
+    {
+        @name = ModuleEnginesFX
+        %powerEffectName = Hydynelox-A7
+    }
+}
